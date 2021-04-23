@@ -3,4 +3,12 @@
 .piolibdeps
 lib/
 .vscode
-
+*.rst
+**/README*
+LICENSE*
+*.png
+*.jpg
+examples/**/*.yml
+examples/**/*.md
+**/CONTR*
+**/CHANGE*
