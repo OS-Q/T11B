@@ -1,0 +1,11 @@
+build: off
+platform:
+  - x64
+install:
+  - cmd: git submodule update --init --recursive
+  - cmd: SET PATH=C:\Python37\Scripts;%PATH%
+  - cmd: pip3 install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
+  - cmd: qio platform install https://github.com/OS-Q/P11/releases/latest/download/package.zip
+
+test_script:
+  - cmd: qio run -d .
